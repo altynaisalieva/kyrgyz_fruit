@@ -1,0 +1,226 @@
+:root{
+  --orange: #FB9333;
+  --black: #000;
+  --black2: #575757;
+  --bg_color: #FFF0DC;
+  --white: #fff;
+}
+
+body{
+ /* height: 1020px;*/
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ background-image: linear-gradient(to right top, #ffffff, #fff, #fff5f7, #fff1ea, #fff0dc);
+}
+header{
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/mainpage.png);
+  background-repeat: no-repeat;
+  background-size: 950px;
+  background-position: 900px 100px;
+  
+  
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5% 0 5%;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--black2);
+  text-transform: uppercase;
+}
+nav ul li a span{
+  color: var(--orange);
+}
+
+.info_btn{
+  display: inline-block;
+  width: 292px;
+  height: 53px;
+  text-align: center;
+  background-color: var(--bg_color) ;
+  border-radius: 100px;
+  font-weight: 400;
+  color: var(--black2);
+  margin: 110px 0 0 5%;
+  cursor: pointer;
+}
+.info_btn span, .descr span{
+  color: var(--orange);
+}
+
+.descr{
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: -0.02em;
+  color: var(--black2);
+  margin: 10px 0 0 5%;
+}
+.inf_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin: 15% 0 0 5%;*/
+  margin: 15% auto;
+  background-color: var(--orange);
+  width: 250px;
+  height: 68px;
+  border-radius: 100px;
+}
+.inf_btn a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 400;
+
+}
+.inf_btn :hover{
+  color: var(--black2);
+}
+.learn_more{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 13% 40px 13%;
+  padding: 2% 0 7% 0;
+}
+.learn_more .img_descr, .nuts .img_descr{
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black2);
+}
+.learn_more  .learn_btn, .nuts .learn_btn{
+  margin-top: 20px;
+  width: 170px;
+  height: 49px;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 100px;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--white);
+  text-transform: lowercase;
+}
+.learn_more  .learn_btn:hover, .nuts .learn_btn:hover{
+  color: var(--orange);
+  background-color: var(--bg_color);
+}
+.general_inf{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 13% 20px 10%;
+  padding-bottom: 5%;
+}
+.general_inf .short_inf{
+  max-width: 750px;
+}
+.general_inf .short_inf h3{
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--black2);
+  text-transform: uppercase;
+}
+.general_inf .short_inf span, .about span{
+  color: var(--orange);
+}
+.general_inf .short_inf p{
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black2);
+}
+.nuts{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13% 40px 13%;
+}
+.header_sc {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--orange);
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13% 40px 13%;
+  padding: 4%;
+}
+.about .short_inf{
+  max-width: 620px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black2);
+}
+.about .benefits{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  text-align: center;
+ 
+}
+.about .benefits .b_info{
+  padding: 0 20px 0 20px;
+ 
+}
+.about .benefits .b_info .descr_benft{
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black2);
+ 
+}
+.joinUs{
+  text-align: center;
+  height: 550px;;
+  margin: 0 13% 40px 13%;
+  background-color: #EADDCA;
+  border-radius: 50px;
+  background-image: url(images/bg-img.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 4%;
+}
+.joinUs .join_header{
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--black2);
+
+
+}
+.joinUs .join_descr{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black2);
+  width: 450px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+.joinUs .header_sc{
+  padding: 4% 0 10px 0;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 13% 40px 13%;
+}
