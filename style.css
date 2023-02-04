@@ -221,6 +221,17 @@ nav ul li a span{
 footer{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   margin: 0 13% 40px 13%;
+  padding-top: 4%;
+}
+footer .part .space{
+  padding-bottom: 10px;
+}
+footer ul{
+  list-style-type: none;
+  
+}
+footer ul a{
+  text-decoration: none;
 }
