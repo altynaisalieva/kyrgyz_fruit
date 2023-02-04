@@ -12,17 +12,17 @@
   <header>
       
     <nav>
-      <img src="icons/logo.png" alt="Logo">
+     <a href="#" class="logo"> <img src="icons/logo.png" alt="Logo" class="logo"></a>
       <ul class="menu">
-        <li> <a href="#"> <span>Главная</span> </a></li>
-        <li> <a href="#">О КОМПАНИИ</a></li>
-        <li> <a href="#">ПРОДУКЦИЯ</a></li>
-        <li> <a href="#">СОТРУДНИЧЕСТВО</a></li>
-        <li> <a href="#">КОНТАКТЫ</a></li>
+        <li> <a href="#main_pg"> <span>Главная</span> </a></li>
+        <li> <a href="#about_company">О КОМПАНИИ</a></li>
+        <li> <a href="#more_info">ПРОДУКЦИЯ</a></li>
+        <li> <a href="#join">СОТРУДНИЧЕСТВО</a></li>
+        <li> <a href="#footer">КОНТАКТЫ</a></li>
       </ul>
     </nav>
    
-      <div class="info_btn"> <p><span>#1 Сухофрукты </span> в Кыргызстане</p> </div>
+      <div class="info_btn" id="main_pg"> <p><span>#1 Сухофрукты </span> в Кыргызстане</p> </div>
       <div class="descr">
         <h1><span>Экспорт сухофруктов,</span><br> грецких орехов, <br>
           фасоли и мёда в Европейский Союз</h1>
@@ -30,7 +30,7 @@
       <!-- <div class="calculations">
         500-client, 800-order, - star
       </div> -->
-     <div class="inf_btn"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></div>
+     <div class="inf_btn" id="more_info"><a href="#">УЗНАТЬ ПОДРОБНЕЕ</a></div>
   </header>
   <section class="learn_more">
     <div class="items">
@@ -52,7 +52,7 @@
     </div>
   </section>
   <section class="general_inf">
-    <img src="images/multiplefruits.jpg" alt="multiplefruits">
+    <img src="images/multiplefruits.png" alt="multiplefruits">
     <div class="short_inf"> 
       <h3> <span>kyrgyz</span> fruit</h3>
       <p><span>Сухофрукты</span>— высушенные фрукты или ягоды, из которых путем
@@ -83,7 +83,7 @@
       <button class="learn_btn"> learn more</button>
     </div>
   </section>
-  <div class="header_sc">О КОМПАНИИ</div>
+  <div class="header_sc" id="about_company">О КОМПАНИИ</div>
   <section class="about">
     <div class="short_inf">
       <p>Наша компания основана в 2009 году. Мы являемся крупным производителем и экспортером 
@@ -109,44 +109,50 @@
     </div>
   </section>
 
-  <section class="joinUs">
+  <section class="joinUs" id="join">
     <div class="header_sc">ПРИСОЕДИНЯТЕСЬ К НАМ!</div>
     <div class="join_header">Подпишись на получение <br> новостей и выигрывай!</div>
     <div class="join_descr">Несколько раз в месяц, но не более раза в неделю, мы высылаем информацию 
       об актуальных акциях, о лучших предложениях, о распродажах и ценных конкурсах.</div>
-    
+      
+    <div class="send_email">
+      <input type="text" name="mail" placeholder="Адрес Вашей электронной почты" class="email_box">
+      <button class="send_btn">подписаться</button>
+    </div>
+      
   </section>
 
-  <footer>
+  <footer id="footer">
    <div class="part">
-    <a href="#"><img src="icons/logo.png" alt="logo" class="footer_logo space"></a>
-    <div class="addr"><img src="footer_icons/location_on.png" alt="">Адрес: Кыргызстан, <br> 720073 Бишкек, <br> Сокулук район, <br> ул. Ленина 1</div>
-    <div class="copyr">copyright</div> 
+    <a href="#main_pg"><img src="icons/logo.png" alt="logo" class="footer_logo space"></a>
+    <div class="addr"><img src="footer_icons/location_on.png" alt=""> <a href="#" class="link">Адрес: Кыргызстан, <br> 720073 Бишкек, <br> Сокулук район, <br> ул. Ленина 1</a></div>
+    <div class="copyr">© Copyright Kyrgyzstan</div> 
    </div>
 
    <div class="part">
-    <div class="hd">Feature</div>
     <ul>
-      <li><a href="#">Главная</a></li>
-      <li><a href="#">О КОМПАНИИ</a></li>
-      <li><a href="#">ПРОДУКЦИЯ</a></li>
-      <li><a href="#">СОТРУДНИЧЕСТВО</a></li>
+      <li><a href="#main_pg">Главная</a></li>
+      <li><a href="#about_company">О КОМПАНИИ</a></li>
+      <li><a href="#more_info">ПРОДУКЦИЯ</a></li>
+      <li><a href="#join">СОТРУДНИЧЕСТВО</a></li>
     </ul> 
    </div>
 
    <div class="part">
-    <div class="hd space">Get in Touch</div>
-  <div class="addr"><img src="footer_icons/location_on.png" alt="">42.849659° 74.282131°1</div>
-    <div class="email"><img src="footer_icons/email.png" alt="">42.849659° 74.282131°1</div>
-    <div class="phone"><img src="footer_icons/call.png" alt="">42.849659° 74.282131°1</div> 
+    <div class="contact">
+      <div class="addr"><img src="footer_icons/location_on.png" alt="" class="icon"> <a class="link" href="https://www.google.com/maps/search/%D0%90%D0%B4%D1%80%D0%B5%D1%81:+%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD,+720073+%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA,+%D0%A1%D0%BE%D0%BA%D1%83%D0%BB%D1%83%D0%BA+%D1%80%D0%B0%D0%B9%D0%BE%D0%BD,+%D1%83%D0%BB.+%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0+1/@42.8314905,74.1438417,10z/data=!3m1!4b1" target="_blank">
+        42.849659° 74.282131°1</a> </div>
+      <div class="email"><img src="footer_icons/email.png" alt="" class="icon"> <a href = "mailto: Kyrgyzfruit@company.com" class="link">Kyrgyzfruit@company.com</a></div>
+      <div class="phone"><img src="footer_icons/call.png" alt="" class="icon"><a href="tel:+996-312-11-11-11" class="link">+996 312 11 11 11</a></div> 
+    </div>
    </div>
 
    <div class="part">
     <div class="hd space">Follow us</div>
     <div class="social_media">
-      <img src="footer_icons/instagram.png" alt="">
-      <img src="footer_icons/linkedin.png" alt="">
-      <img src="footer_icons/twitter.png" alt="">
+      <a href="#"><img src="footer_icons/instagram.png" alt="" class="s_icon"></a>
+      <a href="#"><img src="footer_icons/linkedin.png" alt="" class="s_icon"></a>
+      <a href="#"><img src="footer_icons/twitter.png" alt="" class="s_icon"> </a>
     </div> 
    </div>
    

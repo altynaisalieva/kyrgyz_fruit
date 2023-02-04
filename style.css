@@ -28,7 +28,17 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 5% 0 5%;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg_color);
+}
+nav .logo{
+  padding-left: 5%;
+}
+nav ul{
+  padding-right: 5%;
 }
 nav ul li {
   list-style: none;
@@ -42,8 +52,14 @@ nav ul li a{
   color: var(--black2);
   text-transform: uppercase;
 }
+nav ul li a:hover{
+  color: var(--orange);
+}
 nav ul li a span{
   color: var(--orange);
+}
+nav ul li a span:hover{
+  color: var(--black2);
 }
 
 .info_btn{
@@ -55,7 +71,7 @@ nav ul li a span{
   border-radius: 100px;
   font-weight: 400;
   color: var(--black2);
-  margin: 110px 0 0 5%;
+  margin: 10% 0 0 5%;
   cursor: pointer;
 }
 .info_btn span, .descr span{
@@ -217,21 +233,87 @@ nav ul li a span{
 .joinUs .header_sc{
   padding: 4% 0 10px 0;
 }
+.joinUs .send_email{
+  position: relative;
+  width: 700px;
+  margin: 80px auto 0 auto;
+  
+  
+}
+.joinUs .send_email .email_box{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  height: 80px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black2);
+  
+}
+.joinUs .send_email .send_btn{
+  position: absolute;
+  width: 170px;
+  height: 64px;
+  right: 8px; 
+  top: 8px;
+  bottom:8px;
+  border: 0;
+  background: var(--orange);
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+}
 
 footer{
   display: flex;
   justify-content: space-between;
-
+  color: var(--black2);
+  font-weight: 400;
   margin: 0 13% 40px 13%;
   padding-top: 4%;
 }
 footer .part .space{
-  padding-bottom: 10px;
+  padding: 15px 0 15px 25px;
 }
-footer ul{
+footer .part .social_media .s_icon{
+  margin-right: 20px;
+}
+footer .part ul{
   list-style-type: none;
-  
+  line-height: 2.8em;
 }
-footer ul a{
+footer ul li a{
   text-decoration: none;
+  color: var(--black2);
+}
+footer ul li a:hover{
+  color: var(--orange);
+}
+footer .part .copyr{
+  margin-top: 10%;
+}
+
+footer .part .contact{
+  line-height: 2.5em; 
+}
+footer .part .contact .icon{
+  margin: 1.5em 5px 0 0;
+}
+footer .part .link{
+  text-decoration: none;
+  color: var(--black2);
+}
+footer .part .contact .link:hover{
+  color: var(--orange);
 }
