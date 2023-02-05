@@ -61,6 +61,22 @@ nav ul li a span{
 nav ul li a span:hover{
   color: var(--black2);
 }
+.increment_counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8% 0 0 6%;
+  width: 350px;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black2);
+}
+.increment_counter .counter{
+  font-size: 30px;
+  color: var(--orange);
+  font-weight: 700;
+
+}
 
 .info_btn{
   display: inline-block;
@@ -90,7 +106,7 @@ nav ul li a span:hover{
   justify-content: center;
   align-items: center;
   /*margin: 15% 0 0 5%;*/
-  margin: 15% auto;
+  margin: 7% auto;
   background-color: var(--orange);
   width: 250px;
   height: 68px;
